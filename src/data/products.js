@@ -1,5 +1,10 @@
 import ltContactorImg from '../assets/images/DP_LT CONTACTOR APFC PANEL.png';
 import ltThyristorImg from '../assets/images/DP_LT THYRISTOR APFC PANEL 2.png';
+import pccPanelImg from '../assets/images/pcc_panel.png';
+import softStarterImg from '../assets/images/soft_starter.png';
+import starDeltaImg from '../assets/images/star_delta.png';
+import htIcogImg from '../assets/images/ht_icog.png';
+import apfcImg from '../assets/images/apfc.jpg';
 
 export const products = [
   {
@@ -54,7 +59,7 @@ export const products = [
       "Optional detuning reactors for harmonic suppression",
       "Custom SCADA / remote monitoring interface available"
     ],
-    image: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?auto=format&fit=crop&q=80&w=800"
+    image: htIcogImg
   },
   {
     id: 4,
@@ -72,7 +77,7 @@ export const products = [
       "Advanced controller with touchscreen HMI",
       "Cloud-based access and event logging (optional)"
     ],
-    image: "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&q=80&w=800"
+    image: softStarterImg
   },
   {
     id: 5,
@@ -90,7 +95,7 @@ export const products = [
       "Tested for high fault withstand capacity as per IEC/IS",
       "Intelligent monitoring through SCADA/PLC systems"
     ],
-    image: "https://images.unsplash.com/photo-1534394416979-994191632731?auto=format&fit=crop&q=80&w=800"
+    image: pccPanelImg
   },
   {
     id: 6,
@@ -108,7 +113,7 @@ export const products = [
       "Excellent cable management and segregation",
       "Compliant with IS/IEC standards for MCC design"
     ],
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800"
+    image: starDeltaImg
   },
   {
     id: 7,
@@ -126,7 +131,7 @@ export const products = [
       "Fully wired, tested, and ready-to-install panels",
       "Complies with relevant IS/IEC standards"
     ],
-    image: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?auto=format&fit=crop&q=80&w=800"
+    image: pccPanelImg
   },
   {
     id: 8,
@@ -144,7 +149,7 @@ export const products = [
       "Requires no external cooling or ventilation",
       "Designed for energy-efficient motor control"
     ],
-    image: "https://images.unsplash.com/photo-1498084393753-b411ce9470b3?auto=format&fit=crop&q=80&w=800"
+    image: softStarterImg
   },
   {
     id: 9,
@@ -162,7 +167,7 @@ export const products = [
       "Suitable for indoor and outdoor installations",
       "Proven performance in steel, cement, and water plants"
     ],
-    image: "https://images.unsplash.com/photo-1558441331-2445c23f65e5?auto=format&fit=crop&q=80&w=800"
+    image: softStarterImg
   },
   {
     id: 10,
@@ -179,7 +184,7 @@ export const products = [
       "Flexible tapping options as per motor rating",
       "Tested for durability under tough conditions"
     ],
-    image: "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&q=80&w=800"
+    image: starDeltaImg
   },
   {
     id: 11,
@@ -196,7 +201,7 @@ export const products = [
       "Compact design with clear terminal markings",
       "Customizable for specific motor ratings"
     ],
-    image: "https://images.unsplash.com/photo-1534394416979-994191632731?auto=format&fit=crop&q=80&w=800"
+    image: starDeltaImg
   },
   {
     id: 12,
@@ -213,7 +218,7 @@ export const products = [
       "High-grade powder-coated enclosure for durability",
       "Wide voltage range support (up to 440V AC)"
     ],
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800"
+    image: starDeltaImg
   },
   {
     id: 13,
@@ -231,7 +236,7 @@ export const products = [
       "Reverse power and frequency protection",
       "SCADA/BMS compatibility for remote monitoring"
     ],
-    image: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?auto=format&fit=crop&q=80&w=800"
+    image: htIcogImg
   },
   {
     id: 14,
@@ -249,7 +254,7 @@ export const products = [
       "Remote and local operation with SCADA/PLC options",
       "Indoor and outdoor versions available (IP42-IP55)"
     ],
-    image: "https://images.unsplash.com/photo-1498084393753-b411ce9470b3?auto=format&fit=crop&q=80&w=800"
+    image: htIcogImg
   },
   {
     id: 15,
@@ -267,7 +272,7 @@ export const products = [
       "Wall-mountable or pedestal-mounted as per app",
       "Compliant with DISCOM utility regulations"
     ],
-    image: "https://images.unsplash.com/photo-1558441331-2445c23f65e5?auto=format&fit=crop&q=80&w=800"
+    image: apfcImg
   },
   {
     id: 16,
@@ -285,7 +290,7 @@ export const products = [
       "Option for integrated energy meter integration",
       "Suitable for individual flats or commercial units"
     ],
-    image: "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&q=80&w=800"
+    image: apfcImg
   },
   {
     id: 17,
@@ -303,7 +308,7 @@ export const products = [
       "Complies with utility/DISCOM specifications",
       "Cable alley and removable gland plates for termination"
     ],
-    image: "https://images.unsplash.com/photo-1534394416979-994191632731?auto=format&fit=crop&q=80&w=800"
+    image: pccPanelImg
   },
   {
     id: 18,
@@ -321,7 +326,7 @@ export const products = [
       "Integrated battery charger and status indicators",
       "Designed as per IP42/IP55/IP65 standards"
     ],
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800"
+    image: pccPanelImg
   },
   {
     id: 19,
@@ -339,7 +344,7 @@ export const products = [
       "Dustproof and weather-resistant IP-rated enclosures",
       "BMS/SCADA integration for automation"
     ],
-    image: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?auto=format&fit=crop&q=80&w=800"
+    image: starDeltaImg
   },
   {
     id: 20,
@@ -357,7 +362,7 @@ export const products = [
       "High-quality contactors or thyristor switching",
       "Integration support with SCADA/BMS"
     ],
-    image: "https://images.unsplash.com/photo-1498084393753-b411ce9470b3?auto=format&fit=crop&q=80&w=800"
+    image: softStarterImg
   },
   {
     id: 21,
@@ -375,7 +380,7 @@ export const products = [
       "Designed as per IS 13585 and IEC 60831",
       "Ratings from 5 kVAR to 1000 kVAR and above"
     ],
-    image: "https://images.unsplash.com/photo-1558441331-2445c23f65e5?auto=format&fit=crop&q=80&w=800"
+    image: htIcogImg
   },
   {
     id: 22,
@@ -393,7 +398,7 @@ export const products = [
       "Optional integration with AMF/GSM/BMS",
       "Designed for high electrical/mechanical endurance"
     ],
-    image: "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&q=80&w=800"
+    image: pccPanelImg
   }
 ];
 

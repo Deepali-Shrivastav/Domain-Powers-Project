@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { products } from '../data/products';
 import './Products.css';
+import ltThyristorImg from '../assets/images/DP_LT THYRISTOR APFC PANEL 2.png';
 
 const Products = () => {
   const { hash } = useLocation();
@@ -27,7 +28,7 @@ const Products = () => {
       </Helmet>
 
       {/* Hero Section for Products */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(${ltThyristorImg})` }}>
         <div className="container">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}

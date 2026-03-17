@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './About.css';
+import apfcImg from '../../assets/images/apfc.jpg';
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="image-frame">
-              <img src="https://images.unsplash.com/photo-1558441331-2445c23f65e5?auto=format&fit=crop&q=80&w=800" alt="Industrial Panel" />
+              <img src={apfcImg} alt="Industrial Panel" />
               <div className="exp-badge">
                 <span className="years">25+</span>
                 <span className="text">Years of Engineering Excellence</span>

@@ -3,6 +3,9 @@ import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Hero.css';
+import ltContactorImg from '../../assets/images/DP_LT CONTACTOR APFC PANEL.png';
+import ltThyristorImg from '../../assets/images/DP_LT THYRISTOR APFC PANEL 2.png';
+import pccPanelImg from '../../assets/images/pcc_panel.png';
 
 const Hero = () => {
   const settings = {
@@ -25,7 +28,7 @@ const Hero = () => {
       subtitle: "Precision-engineered LT & HT power factor correction solutions designed for industrial excellence.",
       cta: "Explore Our Range",
       link: "/products",
-      bg: "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&q=80&w=1600&sat=-100"
+      bg: pccPanelImg
     },
     {
       id: 2,
@@ -33,7 +36,7 @@ const Hero = () => {
       subtitle: "Smart power quality monitoring and zero-inrush reactive power management systems.",
       cta: "Technical Consultancy",
       link: "/contact",
-      bg: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1600&sat=-100"
+      bg: ltThyristorImg
     },
     {
       id: 3,
@@ -41,7 +44,7 @@ const Hero = () => {
       subtitle: "CPRI Approved & ISO 9001:2015 Certified manufacturing excellence with 25+ years of experience.",
       cta: "Contact Our Experts",
       link: "/contact",
-      bg: "https://images.unsplash.com/photo-1498084393753-b411ce9470b3?auto=format&fit=crop&q=80&w=1600&sat=-100"
+      bg: ltContactorImg
     }
   ];
 

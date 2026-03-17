@@ -10,6 +10,9 @@ import StatsCount from '../components/Stats/StatsCount';
 import OurProducts from '../components/OurProducts/OurProducts';
 import OurServices from '../components/OurServices/OurServices';
 import TechnicalSpecs from '../components/TechSpecs/TechnicalSpecs';
+import ltContactorImg from '../assets/images/DP_LT CONTACTOR APFC PANEL.png';
+import softStarterImg from '../assets/images/soft_starter.png';
+import htIcogImg from '../assets/images/ht_icog.png';
 
 const Home = () => {
   useEffect(() => {
@@ -17,9 +20,9 @@ const Home = () => {
   }, []);
 
   const galleryItems = [
-    { img: "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&q=80&w=800&sat=-100", title: "LT Panel Installation" },
-    { img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800&sat=-100", title: "HT Panel Engineering" },
-    { img: "https://images.unsplash.com/photo-1498084393753-b411ce9470b3?auto=format&fit=crop&q=80&w=800&sat=-100", title: "Power Quality Audit" }
+    { img: ltContactorImg, title: "LT Panel Installation" },
+    { img: htIcogImg, title: "HT Panel Engineering" },
+    { img: softStarterImg, title: "Power Quality Audit" }
   ];
 
   return (
