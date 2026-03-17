@@ -167,14 +167,3 @@ export const ContactPage = () => {
   );
 };
 
-export const BlogPage = () => (
-  <div className="blog-page">
-    <PageHero title="Technical Blog" subtitle="Insights into power quality, energy optimization, and industrial automation." />
-    <section style={{ padding: '100px 0', textAlign: 'center' }}>
-       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-         <h2 style={{ color: '#ccc', textTransform: 'uppercase' }}>Coming Soon</h2>
-         <p>Our engineers are documenting case studies for you.</p>
-       </motion.div>
-    </section>
-  </div>
-);

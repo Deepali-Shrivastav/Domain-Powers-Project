@@ -3,7 +3,9 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Home from './pages/Home'
 import Products from './pages/Products'
-import { ServicesPage, GalleryPage, BlogPage, ContactPage } from './pages/Pages'
+import { ServicesPage, GalleryPage, ContactPage } from './pages/Pages'
+import BlogListing from './pages/BlogListing'
+import BlogPost from './pages/BlogPost'
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog" element={<BlogListing />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
