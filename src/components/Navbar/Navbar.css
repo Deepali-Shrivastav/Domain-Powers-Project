@@ -1,0 +1,227 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+  transition: var(--transition);
+  background: rgba(15, 15, 15, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  transition: var(--transition);
+}
+
+.navbar.scrolled .logo-img {
+  height: 45px;
+}
+
+.navbar.scrolled {
+  padding: 10px 0;
+  background: var(--pure-white);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border-bottom: 2px solid var(--primary-red);
+}
+
+.navbar.scrolled .logo-img {
+  height: 45px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar.scrolled .nav-links a {
+  color: var(--primary-black);
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: var(--primary-red) !important;
+}
+
+.dropdown-icon {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-trigger:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* Mega Dropdown Styling */
+.mega-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  background: white;
+  padding: 40px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  border-top: 4px solid var(--primary-red);
+  z-index: 1000;
+}
+
+.dropdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.dropdown-column h4 {
+  color: var(--primary-red);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--light-gray);
+  padding-bottom: 10px;
+}
+
+.dropdown-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dropdown-column li a {
+  color: var(--text-secondary) !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  line-height: 1.4;
+  padding: 0 !important;
+  transition: color 0.2s ease;
+}
+
+.dropdown-column li a:hover {
+  color: var(--primary-red) !important;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-cta-mobile {
+  display: none !important;
+}
+
+@media (max-width: 992px) {
+  .nav-cta-mobile {
+    display: block !important;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.nav-cta {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  padding: 14px 28px !important;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .mega-dropdown {
+    width: 700px;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    padding: 100px 30px;
+    align-items: flex-start;
+    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    display: block;
+  }
+
+  .nav-links a {
+    color: var(--primary-black) !important;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--off-white);
+  }
+
+  .mega-dropdown {
+    position: static;
+    width: 100%;
+    transform: none;
+    box-shadow: none;
+    padding: 20px 0;
+    border: none;
+  }
+
+  .dropdown-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-cta {
+    display: none !important;
+  }
+}
