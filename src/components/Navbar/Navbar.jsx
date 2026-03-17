@@ -58,9 +58,16 @@ const Navbar = () => {
               <Link 
                 to={item.path} 
                 className={`${location.pathname === item.path ? 'active' : ''} ${item.dropdown ? 'has-dropdown' : ''}`}
-                onClick={closeMenu}
+                onClick={(e) => {
+                  if (item.dropdown && window.innerWidth <= 992) {
+                    e.preventDefault();
+                    setActiveDropdown(activeDropdown === item.name ? null : item.name);
+                  } else {
+                    closeMenu();
+                  }
+                }}
               >
-                {item.name} {item.dropdown && <FaChevronDown className="dropdown-icon" />}
+                {item.name} {item.dropdown && <FaChevronDown className={`dropdown-icon ${activeDropdown === item.name ? 'rotated' : ''}`} />}
               </Link>
 
               {item.dropdown && (

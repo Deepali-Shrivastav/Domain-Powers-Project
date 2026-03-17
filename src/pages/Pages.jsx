@@ -4,12 +4,11 @@ import OurServices from '../components/OurServices/OurServices';
 import TechnicalSpecs from '../components/TechSpecs/TechnicalSpecs';
 
 const PageHero = ({ title, subtitle }) => (
-  <section className="page-hero" style={{ background: 'var(--primary-black)', padding: '150px 0 100px', textAlign: 'center', borderBottom: '4px solid var(--primary-red)' }}>
+  <section className="page-hero">
     <div className="container">
       <motion.h1 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        style={{ color: 'white', fontSize: '3.5rem', fontWeight: 800, textTransform: 'uppercase', marginBottom: '15px' }}
       >
         {title}
       </motion.h1>
@@ -17,7 +16,6 @@ const PageHero = ({ title, subtitle }) => (
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
-        style={{ color: '#888', fontSize: '1.2rem', maxWidth: '700px', margin: '0 auto' }}
       >
         {subtitle}
       </motion.p>

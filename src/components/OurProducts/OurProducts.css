@@ -17,21 +17,24 @@
 }
 
 @media (max-width: 992px) {
-  .nav-cta-mobile {
-    display: block !important;
-    margin-top: 30px;
-    width: 100%;
-    text-align: center;
-  }
+  .our-products { padding: 80px 0; }
   .our-products .grid-3 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .our-products .grid-3 {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
+}
+
+@media (max-width: 480px) {
+  .product-content { padding: 25px; }
+  .product-content h3 { font-size: 1.2rem; }
+  .product-img-wrapper { height: 200px; }
 }
 
 .product-card {

@@ -119,13 +119,29 @@
 }
 
 @media (max-width: 992px) {
+  .text-content { text-align: center; margin: 0 auto; }
   .text-content h1 { font-size: 3rem; }
+  .hero-btns { justify-content: center; }
   .experience-badge-floating {
-    bottom: 50px;
-    right: 30px;
-    width: 140px;
-    height: 140px;
+    bottom: 30px;
+    right: 20px;
+    width: 120px;
+    height: 120px;
+    padding: 20px;
   }
-  .badge-content .number { font-size: 2.5rem; }
-  .slick-dots { left: 50%; transform: translateX(-50%); text-align: center; }
+  .badge-content .number { font-size: 2.22rem; }
+  .slick-dots { left: 50% !important; transform: translateX(-50%); text-align: center; }
+}
+
+@media (max-width: 768px) {
+  .hero-btns { flex-direction: column; width: 100%; max-width: 300px; margin: 0 auto; }
+  .text-content h1 { font-size: 2.2rem; }
+  .text-content p { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .experience-badge-floating { display: none; }
+  .text-content h1 { font-size: 1.8rem; }
+  .hero { height: auto; min-height: 500px; }
+  .slide-item { height: auto; padding: 120px 0 80px; }
 }
