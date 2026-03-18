@@ -80,25 +80,19 @@ const Navbar = () => {
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ duration: 0.3, ease: "easeOut" }}
                     >
-                      <div className="dropdown-grid">
-                        {Object.entries(categorizedProducts).map(([category, ids]) => (
-                          <div key={category} className="dropdown-column">
-                            <h4>{category}</h4>
-                            <ul>
-                              {ids.map(id => {
-                                const product = products.find(p => p.id === id);
-                                if (!product) return null;
-                                return (
-                                  <li key={id}>
-                                    <Link to={`/products#${product.id}`} onClick={closeMenu}>
-                                      {product.name}
-                                    </Link>
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          </div>
-                        ))}
+                      <div className="dropdown-grid single-col">
+                        <div className="dropdown-column">
+                          <h4>APFC Solutions</h4>
+                          <ul>
+                            {products.map(product => (
+                              <li key={product.id}>
+                                <Link to={`/product/${product.id}`} onClick={closeMenu}>
+                                  {product.name}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </motion.div>
                   )}

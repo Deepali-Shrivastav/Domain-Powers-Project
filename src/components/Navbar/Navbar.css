@@ -103,6 +103,12 @@
   gap: 30px;
 }
 
+.dropdown-grid.single-col {
+  grid-template-columns: 1fr;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
 .dropdown-column h4 {
   color: var(--primary-red);
   font-size: 0.8rem;

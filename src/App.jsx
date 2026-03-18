@@ -6,6 +6,7 @@ import Products from './pages/Products'
 import { ServicesPage, GalleryPage, ContactPage } from './pages/Pages'
 import BlogListing from './pages/BlogListing'
 import BlogPost from './pages/BlogPost'
+import ProductDetail from './pages/ProductDetail'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/blog" element={<BlogListing />} />

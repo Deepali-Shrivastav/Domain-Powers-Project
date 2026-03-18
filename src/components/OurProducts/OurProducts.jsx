@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 import './OurProducts.css';
 
 const OurProducts = () => {
-  // Show only featured products on home page
-  const featuredProducts = products.slice(0, 6);
+  // Show all 4 core products on home page
+  const featuredProducts = products;
 
   return (
     <section className="our-products">
@@ -47,13 +47,13 @@ const OurProducts = () => {
               <div className="product-content">
                 <h3>{product.name}</h3>
                 <p>{product.description}</p>
-                <Link to={`/products#${product.id}`} className="learn-more">Explore Details →</Link>
+                <Link to={`/product/${product.id}`} className="learn-more">Explore Details →</Link>
               </div>
             </motion.div>
           ))}
         </div>
         <div style={{ textAlign: 'center', marginTop: '60px' }}>
-          <Link to="/products" className="btn btn-outline">Show All 22+ Products</Link>
+          <Link to="/products" className="btn btn-outline">View All Solutions</Link>
         </div>
       </div>
     </section>

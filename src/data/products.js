@@ -1,410 +1,235 @@
-import ltContactorImg from '../assets/images/DP_LT CONTACTOR APFC PANEL.png';
-import ltThyristorImg from '../assets/images/DP_LT THYRISTOR APFC PANEL 2.png';
-import pccPanelImg from '../assets/images/pcc_panel.png';
-import softStarterImg from '../assets/images/soft_starter.png';
-import starDeltaImg from '../assets/images/star_delta.png';
-import htIcogImg from '../assets/images/ht_icog.png';
-import apfcImg from '../assets/images/apfc.jpg';
+import apfcPanelImg from '../assets/images/APFC PANEL.png';
+import htApfcImg from '../assets/images/HT APFC Panels.jpg';
+import hybridApfcImg from '../assets/images/Hybrid APFC Panels.png';
+import rtpfcPanelImg from '../assets/images/rtpfc-panel.png';
 
 export const products = [
   {
-    id: 1,
-    name: "LT Contactor-Based APFC Panels",
+    id: "lt-apfc-panel",
+    name: "LT APFC Panel",
+    fullName: "Automatic Power Factor Correction Panel",
     category: "APFC Solutions",
-    description: "Smart, reliable, and cost-effective solution for low-tension applications using durable LT contactors.",
-    fullDescription: "Domain Powers offers a smart, reliable, and cost-effective solution through our LT Contactor-Based Automatic Power Factor Correction (APFC) Panels. These panels are engineered to maintain optimal power factor levels by automatically switching capacitor banks using durable LT contactors, ensuring consistent performance across varying load conditions.",
-    features: [
-      "Automatic Reactive Power Compensation through contactor-based switching",
-      "Robust LT Contactors ensure reliable operation in harsh environments",
-      "Microcontroller-Based Intelligent Relay for real-time monitoring",
-      "Modular Design for easy maintenance and expansion",
-      "High-Grade Capacitors for thermal and electrical stability",
-      "Inbuilt Protection for overvoltage, undervoltage, and overcurrent",
-      "Designed as per IEC standards for performance and safety",
-      "Customizable kVAR Ratings based on load requirements"
+    description: "The LT APFC Panel (Low Voltage Automatic Power Factor Correction Panel) is engineered to deliver consistent power factor above 0.99 in 415V / 440V industrial electrical systems.",
+    fullDescription: "The LT APFC Panel (Low Voltage Automatic Power Factor Correction Panel) by Domain Powers is engineered to deliver consistent power factor above 0.99 in 415V / 440V industrial electrical systems. Designed with industrial grade PFC components and precision control technology, our LT APFC panels ensure maximum penalty savings, reduced kVA demand and long operational life even under demanding load conditions.\n\nBuilt for Indian power conditions, fluctuating loads and heavy motor applications, our LT APFC panels provide stable, intelligent and reliable power factor correction for industries and commercial facilities.",
+    keyFeatures: [
+      "Heavy Duty / Super Heavy Duty Power Capacitors",
+      "Advanced Microprocessor-Based APFC Relay",
+      "Accurate Reactive Power Compensation",
+      "Fast Response Switching",
+      "Engineered for Continuous 24x7 Industrial Operation"
     ],
-    image: ltContactorImg
+    technicalHighlights: [
+      "Microprocessor-based 3CT sensing APFC controller for accurate real-time load monitoring across all three phases",
+      "Capacitor duty AC6b rated contactors with inrush current suppression for safe switching",
+      "Intelligent step-by-step capacitor bank operation to prevent overcompensation",
+      "Thermostat-controlled cooling fans for optimal internal temperature management",
+      "Individual step protection using MCB / MCCB / HRC fuse",
+      "Copper busbar system with proper spacing for low temperature rise"
+    ],
+    benefits: [
+      "Maintains continuous power factor up to 0.99",
+      "Eliminates power factor penalty charges completely",
+      "Reduces maximum demand (kVA) and electricity bills",
+      "Increases transformer efficiency",
+      "Improves voltage stability across LT network",
+      "Prevents capacitor failures due to controlled switching",
+      "Ensures longer capacitor and contactor life",
+      "Delivers faster return on investment (ROI)",
+      "Suitable for fluctuating motor loads and industrial duty"
+    ],
+    applications: [
+      "Manufacturing industries with heavy motor loads",
+      "Steel plants & rolling mills",
+      "Chemical and process plants with continuous operations",
+      "Commercial complexes, malls and multiplexes",
+      "Hospitals and healthcare facilities with sensitive electrical loads",
+      "Water Treatment Plants (WTP) and Sewage Treatment Plants (STP)",
+      "IT parks and corporate office buildings",
+      "Warehouses, logistics hubs and automated facilities",
+      "Textile, packaging and FMCG industries"
+    ],
+    faqs: [
+      {
+        q: "What is an LT APFC Panel?",
+        a: "An LT APFC Panel is an electrical system used in 415V / 440V three-phase networks to automatically maintain power factor by switching capacitor banks based on real-time load conditions."
+      },
+      {
+        q: "What voltage is an LT APFC panel used for?",
+        a: "LT APFC panels are designed for 415V / 440V low voltage three-phase electrical systems commonly used in industrial and commercial installations."
+      },
+      {
+        q: "What power factor can be achieved?",
+        a: "A properly engineered LT APFC panel can maintain a stable power factor between 0.98 and 0.99, depending on load variation and system conditions."
+      }
+    ],
+    image: apfcPanelImg
   },
   {
-    id: 2,
-    name: "LT Thyristor-Based APFC Panel",
+    id: "rtpfc-panel",
+    name: "RTPFC Panel",
+    fullName: "Real-Time Power Factor Correction Panel",
     category: "APFC Solutions",
-    description: "Near-instant response time for dynamic load environments like welding plants and induction heating.",
-    fullDescription: "Designed for industries with rapidly changing loads, our Thyristor-Based APFC Panels offer seamless, silent, and spark-free switching of capacitors. Built with precision engineering, these panels eliminate inrush current and voltage transients during capacitor insertion.",
-    features: [
-      "Fast switching response time for dynamic loads",
-      "Fully electronic, contactless capacitor switching",
-      "Eliminates inrush current and voltage transients",
-      "Microcontroller-based intelligent relay system",
-      "Suitable for harmonic-prone installations",
-      "Operates silently with zero mechanical wear",
-      "Real-time monitoring with digital power analyzers",
-      "Compact design with optimized panel layout"
+    description: "The RTPFC Panel (Real-Time Power Factor Correction Panel) is an advanced automatic power factor correction system designed to deliver instantaneous compensation in highly dynamic electrical environments.",
+    fullDescription: "The RTPFC Panel (Real-Time Power Factor Correction Panel) is an advanced automatic power factor correction system designed to deliver instantaneous compensation in highly dynamic electrical environments. Engineered with fast solid-state switching technology, RTPFC panels maintain stable power factor up to 0.99 even in rapidly fluctuating loads such as data centers, automation systems, HVACs, Drives and heavy VFD applications.\n\nDomain Powers manufactures RTPFC panels for industries where conventional APFC panels cannot respond fast enough, ensuring zero penalty, stable voltage and uninterrupted electrical performance.",
+    keyFeatures: [
+      "Solid-State Technology with zero cross over",
+      "Real-Time Compensation- Millisecond Switching",
+      "Heavy Duty Capacitors with filters",
+      "No Mechanical Wear",
+      "Fast discharge resistors- snubber circuits"
     ],
-    image: ltThyristorImg
+    technicalHighlights: [
+      "High-speed switching response in milliseconds",
+      "Zero-voltage switching to prevent transients",
+      "Accurate three-phase sensing for precise PF correction",
+      "Silent and spark-free capacitor engagement",
+      "Reduced stress on capacitors and busbars",
+      "Designed for rapidly changing and non-linear loads",
+      "Compatible with harmonic-prone environments (with optional detuning)"
+    ],
+    benefits: [
+      "Transient free capacitor group switching using Electronics Switching elements",
+      "Maintains power factor up to 0.99 under dynamic load changes",
+      "Avoid wave form distortions, since capacitors are connected and disconnected during Zero crossing",
+      "Saves energy by reduced max. Demand, PF bonus & saving in Transformer losses.",
+      "Ideal for high-speed and fluctuating load systems",
+      "Provides silent and maintenance-friendly operation",
+      "Extends lifespan of capacitors and switching devices",
+      "Reduces maximum demand (kVA) charges"
+    ],
+    applications: [
+      "Data centers and server facilities",
+      "IT parks and software companies",
+      "Automation-driven manufacturing plants",
+      "CNC, robotics and precision industries",
+      "Quick commerce warehouses",
+      "Airports and metro rail systems",
+      "Hospitals with critical electrical loads",
+      "Printing, packaging and textile industries"
+    ],
+    faqs: [
+      {
+        q: "How is RTPFC different from a conventional APFC panel?",
+        a: "Conventional APFC panels use mechanical switching devices with time delay, while RTPFC panels use high-speed solid-state switching to provide real-time correction without delay."
+      },
+      {
+        q: "Where should RTPFC panels be installed?",
+        a: "RTPFC panels are recommended for data centers, automation plants, VFD-dominated systems and industries where load fluctuates frequently."
+      }
+    ],
+    image: rtpfcPanelImg
   },
   {
-    id: 3,
-    name: "HT APFC Panels (3.3kV to 33kV)",
+    id: "ht-apfc-panel",
+    name: "HT APFC Panel",
+    fullName: "High Tension Automatic Power Factor Correction Panel",
     category: "APFC Solutions",
-    description: "High-tension power distribution systems engineered to manage reactive power across MV and HV networks.",
-    fullDescription: "Domain Powers offers HT Automatic Power Factor Correction (APFC) Panels, engineered to intelligently manage reactive power across MV and HV networks ranging from 3.3kV to 33kV. These panels improve power quality, reduce losses, and enhance energy efficiency.",
-    features: [
-      "Available in multiple HT voltage levels: 3.3kV to 33kV",
-      "Advanced automatic power factor control system",
-      "Multiple incomer options: VCB, Off-load Isolator, LBS",
-      "Equipped with RVT for capacitor discharge safety",
-      "Integrated with NDR (Neutral Displacement Relays)",
-      "Capacitor protection using reliable HRC fuses",
-      "Optional detuning reactors for harmonic suppression",
-      "Custom SCADA / remote monitoring interface available"
+    description: "The HT APFC Panel (High Tension Automatic Power Factor Correction Panel) is designed for medium and high voltage systems ranging from 3.3kV, 6.6kV, 11kV, 22kV and 33kV.",
+    fullDescription: "The HT APFC Panel (High Tension Automatic Power Factor Correction Panel) is designed for medium and high voltage systems ranging from 3.3kV, 6.6kV, 11kV, 22kV and 33kV. Domain Powers engineers HT APFC panels to provide centralized reactive power compensation at the transformer or feeder level, ensuring stable power factor up to 0.99, reduced maximum demand and improved grid performance.\n\nBuilt for large industrial plants, utilities and infrastructure projects, our HT APFC panels are engineered with robust switching systems, heavy-duty capacitor banks and advanced protection schemes suitable for high voltage applications.",
+    keyFeatures: [
+      "Centralized Reactive power Compensation",
+      "Vacuum Contactor / Circuit Breaker Switching",
+      "Heavy Duty HT Capacitor Banks",
+      "Protection Interlocks",
+      "Intelligent PF Controller",
+      "Automatic Step Control"
     ],
-    image: htIcogImg
+    technicalHighlights: [
+      "Heavy-duty, internally fused or externally fused capacitor units designed for medium voltage applications",
+      "HT APFC panels use vacuum contactors or vacuum circuit breakers (VCB) for reliable and safe capacitor switching",
+      "Advanced Protection System including Overcurrent, Overvoltage, and Neutral Unbalance protection",
+      "Microprocessor-based controller with programmable set points to maintain desired PF automatically",
+      "Harmonic Filtering / Detuned Configuration to prevent resonance and capacitor stress"
+    ],
+    benefits: [
+      "Maintains stable power factor up to 0.99 at HT level",
+      "Eliminates power factor penalties from utility",
+      "Reduces maximum demand (kVA) at grid connection point",
+      "Improves transformer loading capacity",
+      "Reduces I²R losses in HT feeders",
+      "Enhances voltage regulation across plant",
+      "Increases overall electrical system efficiency",
+      "Provides long-term reliability in heavy industrial environments"
+    ],
+    applications: [
+      "Large manufacturing plants & steel rolling mills",
+      "Cement plants & mining operations",
+      "Oil & gas facilities",
+      "Power generation plants & utility substations",
+      "Infrastructure projects (Metro, Airports)",
+      "Large water pumping stations (WTP, Sewage)",
+      "Industrial parks and SEZs"
+    ],
+    faqs: [
+      {
+        q: "What is an HT APFC Panel?",
+        a: "An HT APFC Panel is a High Tension Automatic Power Factor Correction system used at 11kV or 33kV levels to improve power factor and reduce reactive power demand."
+      },
+      {
+        q: "Why use HT APFC instead of LT APFC?",
+        a: "HT APFC corrects power factor at the source (transformer or feeder level), reducing current flow in the entire distribution system and improving overall plant efficiency."
+      }
+    ],
+    image: htApfcImg
   },
   {
-    id: 4,
-    name: "Hybrid APFC Panels (SVG + Thyristor)",
+    id: "hybrid-apfc-panel",
+    name: "Hybrid APFC Panel",
+    fullName: "Thyristor + SVG System",
     category: "APFC Solutions",
-    description: "Combines Static VAR Generators (SVG) with thyristor switching for ultra-fast compensation and harmonic filtering.",
-    fullDescription: "Hybrid APFC Panels combine Static VAR Generators (SVG) with thyristor-switched capacitor banks, offering a next-generation solution for dynamic power factor correction and harmonic compensation. Ideal for facilities with fluctuating reactive power demand and high harmonic distortion.",
-    features: [
-      "Dual Compensation System: SVG + Thyristor controlled capacitors",
-      "Ultra-Fast Response Time: <20 milliseconds switching",
-      "Active Harmonic Filtering up to the 50th order",
-      "Phase-wise current balancing for improved stability",
-      "Maintains power factor close to unity (0.99)",
-      "Modular and scalable architecture",
-      "Advanced controller with touchscreen HMI",
-      "Cloud-based access and event logging (optional)"
+    description: "The Hybrid APFC Panel is an advanced power factor correction solution combining fast thyristor-based capacitor switching with Static VAR Generator (SVG) technology.",
+    fullDescription: "The Hybrid APFC Panel by Domain Powers is an advanced power factor correction solution combining fast thyristor-based capacitor switching with Static VAR Generator (SVG) technology. Designed for highly dynamic and harmonic-rich electrical systems, Hybrid APFC panels deliver real-time reactive power compensation with unmatched accuracy and stability.\n\nThis integrated solution ensures power factor close to unity (up to 0.99 or above), minimizes harmonic distortion and provides superior voltage stability for critical industrial and infrastructure applications.",
+    keyFeatures: [
+      "Integrated Static VAR Generator (SVG)",
+      "Thyristor-Based Fast Switching",
+      "Dynamic kVAr Injection",
+      "Harmonic Mitigation Capability",
+      "Near Unity Power Factor (0.99+)",
+      "Bidirectional Reactive Control",
+      "Intelligent Monitoring System",
+      "HMI based control & monitoring"
     ],
-    image: softStarterImg
-  },
-  {
-    id: 5,
-    name: "HT/LT PCC Panels",
-    category: "Power Distribution",
-    description: "Power Control Center panels designed for efficient management and distribution of power across industrial infrastructures.",
-    fullDescription: "HT and LT PCC (Power Control Center) panels are designed to efficiently manage and distribute power across industrial and commercial infrastructures. Built to handle high electrical loads with precision and safety, ensuring optimal control and protection for various electrical systems.",
-    features: [
-      "Voltage ranges from 415V up to 33kV",
-      "Modular construction with extensible design",
-      "Fully compartmentalized design for improved safety",
-      "Manufactured with top-grade CRCA sheets",
-      "High-performance switchgear (MCCBs, ACBs, VCBs)",
-      "Integrated protection relays and safety interlocks",
-      "Tested for high fault withstand capacity as per IEC/IS",
-      "Intelligent monitoring through SCADA/PLC systems"
+    technicalHighlights: [
+      "Static VAR Generator (SVG) provides continuous and smooth reactive power compensation",
+      "Thyristor-Based Capacitor Switching ensures instantaneous capacitor engagement with zero wear",
+      "Unlike traditional APFC panels, the SVG module provides dynamic and continuous kVAr adjustment",
+      "Fine and real-time correction through SVG ensures precise compensation even during rapid fluctuations",
+      "Works effectively in harmonic-rich systems and eliminates overcompensation"
     ],
-    image: pccPanelImg
-  },
-  {
-    id: 6,
-    name: "MCC Panels (Motor Control Centers)",
-    category: "Power Distribution",
-    description: "Centralized control and protection for motors in both LT and HT systems, supporting multiple starter types.",
-    fullDescription: "Domain Powers offers premium MCC Panels designed to deliver superior reliability and operational safety. These panels provide centralized control and protection for motors in both LT and HT systems, supporting fixed and draw-out types with DOL, star-delta, VFD, and soft starters.",
-    features: [
-      "Fully compartmentalized structure with IP-graded enclosures",
-      "Available in fixed, semi-drawout, and fully drawout versions",
-      "Supports: DOL, Star-Delta, Soft Starter, VFD",
-      "Modular design for easy expansion and maintenance",
-      "High fault level handling with short-circuit protection",
-      "Customized busbar sizing based on load demands",
-      "Excellent cable management and segregation",
-      "Compliant with IS/IEC standards for MCC design"
+    benefits: [
+      "Maintains near unity power factor (0.99 or higher)",
+      "Eliminates power factor penalties completely",
+      "Reduces maximum demand (kVA) charges significantly",
+      "Improves voltage regulation and stability",
+      "Minimizes harmonic distortion impact",
+      "Prevents overcompensation and resonance issues",
+      "Enhances power quality for sensitive equipment",
+      "Extends transformer and distribution system life"
     ],
-    image: starDeltaImg
-  },
-  {
-    id: 7,
-    name: "Manual and Automatic Changeover Panels",
-    category: "Residential & Commercial",
-    description: "Essential for seamless power transfer between main supply and backup generators.",
-    fullDescription: "Manual and Automatic Changeover Panels are designed to prevent power interruptions during outages, ensuring continuous operation of critical systems. Support both manual and auto modes to suit operational needs.",
-    features: [
-      "Ensures smooth transfer between utility and generator",
-      "Available in both manual and automatic modes",
-      "Compact and robust design for indoor/outdoor installation",
-      "Break-before-make and interlocking for safety",
-      "Generator start/stop automation features",
-      "LED indications for source status and breaker positions",
-      "Fully wired, tested, and ready-to-install panels",
-      "Complies with relevant IS/IEC standards"
+    applications: [
+      "Large data centers/ IT Parks",
+      "Semiconductor and electronics manufacturing",
+      "Steel plants with heavy VFD loads",
+      "Cement plants with fluctuating load patterns",
+      "Metro rail and airport infrastructure",
+      "Large hospitals with sensitive diagnostic equipment",
+      "Industrial automation and robotics systems",
+      "Precision engineering industries"
     ],
-    image: pccPanelImg
-  },
-  {
-    id: 8,
-    name: "LT FCMA Soft Starters",
-    category: "Motor Control",
-    description: "Specially designed to offer smooth and reliable motor starting solutions in low voltage applications.",
-    fullDescription: "LT FCMA Soft Starters reduce inrush current and mechanical stress during motor startup, extending the lifespan of motors and connected equipment. Ideal for heavy-duty loads like pumps, compressors, and conveyors.",
-    features: [
-      "Reduces starting current significantly without voltage dips",
-      "Provides soft and shock-free motor starts",
-      "Eliminates mechanical stress on shafts and gearboxes",
-      "No harmonics or power quality distortion introduced",
-      "Simple design with minimal components",
-      "Suitable for continuous and repeated operations",
-      "Requires no external cooling or ventilation",
-      "Designed for energy-efficient motor control"
+    faqs: [
+      {
+        q: "What is a Hybrid APFC Panel?",
+        a: "A Hybrid APFC Panel is a power factor correction system that combines thyristor-based fast switching capacitor banks with Static VAR Generator (SVG) technology."
+      },
+      {
+        q: "How is Hybrid APFC different from conventional APFC?",
+        a: "Conventional APFC uses fixed capacitor steps. Hybrid APFC integrates SVG technology, allowing continuous reactive power adjustment along with fast switching."
+      }
     ],
-    image: softStarterImg
-  },
-  {
-    id: 9,
-    name: "HT FCMA Soft Starters",
-    category: "Motor Control",
-    description: "Advanced medium voltage motor starters based on magnetic flux compensation principle.",
-    fullDescription: "HT FCMA Soft Starters are designed for controlled acceleration of large motors in heavy-duty industrial applications. They help maintain power system stability and protect sensitive equipment from voltage drops.",
-    features: [
-      "Designed for medium voltage motors (3.3kV / 6.6kV / 11kV)",
-      "Substantial reduction in starting current",
-      "Smooth and stepless motor acceleration",
-      "Simple, rugged construction with no moving parts",
-      "Enhances life of motors and mechanical equipment",
-      "Maintenance-free design with long operational life",
-      "Suitable for indoor and outdoor installations",
-      "Proven performance in steel, cement, and water plants"
-    ],
-    image: softStarterImg
-  },
-  {
-    id: 10,
-    name: "ATS MOTOR STARTER",
-    category: "Motor Control",
-    description: "Auto Transformer Starter panels designed to reduce starting current and mechanical stress.",
-    fullDescription: "Ideal for large motors, these panels use a tapped autotransformer to provide a reduced voltage start, ensuring smoother acceleration and extended motor life. High-precision engineering for industrial environments.",
-    features: [
-      "Reduces inrush current during motor startup",
-      "Minimizes mechanical stress and voltage drops",
-      "Suitable for high-power motor applications",
-      "User-friendly layout and control wiring",
-      "Built-in protections for overload and short-circuit",
-      "Flexible tapping options as per motor rating",
-      "Tested for durability under tough conditions"
-    ],
-    image: starDeltaImg
-  },
-  {
-    id: 11,
-    name: "Star/Delta Starter Panels",
-    category: "Motor Control",
-    description: "Efficiently manage the startup of three-phase induction motors above 7.5 HP.",
-    fullDescription: "These panels reduce starting voltage and current initially, then switch to full load. Built with high-quality components ensuring safe operation and minimal wear on motors.",
-    features: [
-      "Reduces starting current and torque in motors",
-      "Smooth transition from star to delta mode",
-      "Ideal for motors above 7.5 HP",
-      "Fully wired and tested for plug-and-play installation",
-      "Equipped with thermal overload protection",
-      "Compact design with clear terminal markings",
-      "Customizable for specific motor ratings"
-    ],
-    image: starDeltaImg
-  },
-  {
-    id: 12,
-    name: "DOL / RDOL Starter Panels",
-    category: "Motor Control",
-    description: "Reliable and efficient starting for small to medium three-phase motors.",
-    fullDescription: "Direct-On-Line and Reversing Direct-On-Line starter panels provide robust protection and minimal downtime. RDOL variants support forward and reverse operation for motor control applications.",
-    features: [
-      "Direct-On-Line starting for simplicity and cost-effectiveness",
-      "RDOL system for forward and reverse operation",
-      "Compact, space-saving panel design",
-      "Pre-wired, tested, and ready-to-install units",
-      "Integrated thermal overload and short-circuit protection",
-      "High-grade powder-coated enclosure for durability",
-      "Wide voltage range support (up to 440V AC)"
-    ],
-    image: starDeltaImg
-  },
-  {
-    id: 13,
-    name: "DG Synchronization Panels",
-    category: "Power Distribution",
-    description: "Seamlessly synchronize multiple diesel generator sets for uninterrupted power and load sharing.",
-    fullDescription: "These panels balance load intelligently among DG sets, optimize fuel consumption, and maintain system stability through automatic load sharing and sequencing logic.",
-    features: [
-      "Automatic synchronization of two or more DG sets",
-      "Microprocessor-based controllers for intelligent management",
-      "Built-in load sharing and DG sequencing logic",
-      "Manual and auto modes with user-friendly HMI",
-      "Grid-to-generator synchronization capabilities",
-      "Real-time monitoring of voltage, frequency, and phase",
-      "Reverse power and frequency protection",
-      "SCADA/BMS compatibility for remote monitoring"
-    ],
-    image: htIcogImg
-  },
-  {
-    id: 14,
-    name: "HT ICOG Panels",
-    category: "Power Distribution",
-    description: "Incoming-Outgoing panels for efficient high-voltage power management and distribution.",
-    fullDescription: "Typically ranging from 6.6kV to 33kV, these panels facilitate smooth flow between incoming HT supply and outgoing feeders, ensuring monitoring and fault isolation.",
-    features: [
-      "Manufactured as per IS/IEC standards for high voltage",
-      "Designed for 6.6kV, 11kV, 22kV, and 33kV applications",
-      "Type-tested for short-circuit withstand and temp rise",
-      "Equipped with VCB as per requirements",
-      "Protection relays for overcurrent, earth fault, etc.",
-      "Compartmentalized design for operator safety",
-      "Remote and local operation with SCADA/PLC options",
-      "Indoor and outdoor versions available (IP42-IP55)"
-    ],
-    image: htIcogImg
-  },
-  {
-    id: 15,
-    name: "CT- Meter Panels",
-    category: "Residential & Commercial",
-    description: "Enclosures for CT-operated energy meters ranging from 40A to 200A.",
-    fullDescription: "Specially designed to meet utility and industrial metering needs, offering robust enclosures with optimal space allocation for reliable power monitoring.",
-    features: [
-      "Rugged CRCA steel construction with powder-coating",
-      "Adequate space for CT-operated meters (40A to 200A)",
-      "Built-in incomer (MCB/isolator/RCB) as required",
-      "Provision for installation of CTs and sealing",
-      "Clear front acrylic window for meter visibility",
-      "Phase indication lamps and volt/amp meter options",
-      "Wall-mountable or pedestal-mounted as per app",
-      "Compliant with DISCOM utility regulations"
-    ],
-    image: apfcImg
-  },
-  {
-    id: 16,
-    name: "Residential/Commercial ACCL Panels",
-    category: "Residential & Commercial",
-    description: "Automatic Changeover with Current Limiter for intelligent supply management.",
-    fullDescription: "Designed to switch supply between mains and generator while limiting current drawn in generator mode to prevent overloads. Ideal for housing societies and offices.",
-    features: [
-      "Seamless automatic changeover between mains and DG",
-      "Built-in current limiting feature to protect DG",
-      "Compatible with ratings from 10A to 63A and beyond",
-      "Available in single-phase and three-phase variants",
-      "LED indications for supply status and source",
-      "Compact design suitable for wall or surface mounting",
-      "Option for integrated energy meter integration",
-      "Suitable for individual flats or commercial units"
-    ],
-    image: apfcImg
-  },
-  {
-    id: 17,
-    name: "Residential/Commercial Meter Panels",
-    category: "Residential & Commercial",
-    description: "Precision-engineered enclosures for housing energy meters and associated protection.",
-    fullDescription: "Used in apartments and shops for accurate energy monitoring and billing. Built with safety and durability in mind to comply with utility norms.",
-    features: [
-      "Suitable for single-phase and three-phase meters",
-      "Accommodates multiple meters (up to 12+ slots)",
-      "High-quality powder-coated CRCA steel for long life",
-      "Clear acrylic or glass windows for easy reading",
-      "Provision for CTs, MCBs, ELCBs, and terminal blocks",
-      "Padlock arrangement for anti-tampering safety",
-      "Complies with utility/DISCOM specifications",
-      "Cable alley and removable gland plates for termination"
-    ],
-    image: pccPanelImg
-  },
-  {
-    id: 18,
-    name: "AMF Panel",
-    category: "Power Distribution",
-    description: "Automatic Mains Failure panels for uninterrupted control of diesel generator sets.",
-    fullDescription: "AMF panels provide automatic start/stop and load transfer for DG sets during power failures. Essential for data centers, hospitals, and industrial facilities.",
-    features: [
-      "Automatic start and stop of DG set during mains failure",
-      "Compatible with single and multiple DG operations",
-      "Equipped with digital AMF relay/controller",
-      "Displays voltage, current, freq, PF, kW, kWh",
-      "Built-in protection for over/under voltage and freq",
-      "Auto/manual selection switch for flexibility",
-      "Integrated battery charger and status indicators",
-      "Designed as per IP42/IP55/IP65 standards"
-    ],
-    image: pccPanelImg
-  },
-  {
-    id: 19,
-    name: "VFD Panel",
-    category: "Motor Control",
-    description: "Variable Frequency Drive systems for motor speed and torque regulation.",
-    fullDescription: "Enhances process control, reduces energy consumption, and extends motor life in HVAC, pump, and conveyor applications.",
-    features: [
-      "Allows precise motor speed control and soft start/stop",
-      "Reduces energy consumption and operational costs",
-      "Minimizes mechanical stress on motors and equipment",
-      "Short-circuit and overload protection built-in",
-      "Compatible with wide range of motor types",
-      "User-friendly interface with LED/LCD display",
-      "Dustproof and weather-resistant IP-rated enclosures",
-      "BMS/SCADA integration for automation"
-    ],
-    image: starDeltaImg
-  },
-  {
-    id: 20,
-    name: "SMART APFC PANEL (GSM/GPRS)",
-    category: "APFC Solutions",
-    description: "IoT enabled APFC systems with real-time remote monitoring and notifications.",
-    fullDescription: "Enables remote access to panel data, performance monitoring, and fault notifications via SMS/Email for maximum efficiency.",
-    features: [
-      "Advanced microcontroller-based APFC relay",
-      "Integrated GSM/GPRS modem for remote monitoring",
-      "Real-time SMS/Email alerts for faults",
-      "Automatic correction of lagging power factor",
-      "Historical data logging for performance analysis",
-      "Compatibility with 3-phase 3-wire/4-wire systems",
-      "High-quality contactors or thyristor switching",
-      "Integration support with SCADA/BMS"
-    ],
-    image: softStarterImg
-  },
-  {
-    id: 21,
-    name: "HT/LT Capacitor Bank",
-    category: "APFC Solutions",
-    description: "Shunt capacitor banks for effective power factor correction in high and low tension systems.",
-    fullDescription: "Enhances power quality and reduces demand charges. Available in automatic and fixed configurations for indoor/outdoor use.",
-    features: [
-      "Suitable for HT (up to 33kV) and LT (415V) apps",
-      "Equipped with detuned or tuned reactors",
-      "High-quality APP or MPP capacitors used",
-      "Star or delta connection configurable",
-      "Automatic or timer-based/manual control",
-      "Rugged powder-coated CRCA/Outdoor enclosures",
-      "Designed as per IS 13585 and IEC 60831",
-      "Ratings from 5 kVAR to 1000 kVAR and above"
-    ],
-    image: htIcogImg
-  },
-  {
-    id: 22,
-    name: "ATS PANEL - AUTO TRANSFER SWITCH",
-    category: "Residential & Commercial",
-    description: "Ensures seamless transition of power supply between mains and standby Sources.",
-    fullDescription: "Engineered to provide reliability and safety with minimal human intervention, minimizing downtime during utility failure.",
-    features: [
-      "Automatic transfer from mains to DG and vice versa",
-      "Fast switching response with reliable contactors",
-      "Microcontroller/PLC-based logic control",
-      "Compatible with single and three-phase systems",
-      "Status indication for source and load health",
-      "Enclosure with IP54/IP65 protection options",
-      "Optional integration with AMF/GSM/BMS",
-      "Designed for high electrical/mechanical endurance"
-    ],
-    image: pccPanelImg
+    image: hybridApfcImg
   }
 ];
 
 export const categorizedProducts = {
-  "APFC Solutions": [1, 2, 3, 4, 20, 21],
-  "Motor Control": [8, 9, 10, 11, 12, 19],
-  "Power Distribution": [5, 6, 13, 14, 18],
-  "Residential & Commercial": [7, 15, 16, 17, 22]
+  "APFC Solutions": ["lt-apfc-panel", "rtpfc-panel", "ht-apfc-panel", "hybrid-apfc-panel"]
 };

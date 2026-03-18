@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './About.css';
-import apfcImg from '../../assets/images/apfc.jpg';
+import apfcImg from '../../assets/images/APFC PANEL.png';
 
 const About = () => {
   return (
