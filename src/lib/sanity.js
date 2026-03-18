@@ -3,7 +3,7 @@ import imageUrlBuilder from '@sanity/image-url';
 
 export const client = createClient({
   // You can find your projectId at https://www.sanity.io/manage
-  projectId: 'your-project-id', 
+  projectId: 'x67zxoli',
   dataset: 'production',
   useCdn: true, // set to `false` to bypass the edge cache
   apiVersion: '2023-05-03', // use current date (YYYY-MM-DD) to target the latest API version
